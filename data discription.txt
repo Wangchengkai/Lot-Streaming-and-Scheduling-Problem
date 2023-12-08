@@ -1,0 +1,18 @@
+Description for the data files:	
+	
+The arrival time of the products is random, and we consider three distributions in our experiment: uniform distribution, exponential distribution and normal distribution. 
+	
+Explanation of the information of the customers:	
+NO.	    : the number of products.
+ITEMS.	    : Number of items of product n  
+ARRIVAL-TIME.	    : Parameters related to arrival time
+UNI.AN	    : Minimum value of arrival time of product n when obeying a uniform distribution
+UNI.BN	    : Maximum value of arrival time of product n when obeying a uniform distribution
+EXP.AN	    : Threshold value of arrival time of product n when obeying a exponential distribution
+EXP.LAMBDA	    : Lambda value of arrival time of product n when obeying a exponential distribution
+NOR.MIU	    : Expected value of arrival time of product n when obeying a normal distribution
+NOR.SIGMA	    : Standard deviation of the arrival time of product n when obeying a normal distribution
+PT	    : Processing time per item for product n
+ST	    : Setup time between two products. It is also related to the machine.
+	
+Note: The ST is a variable of three dimensions. Three dimensions are the previous product, the current product and the machine. Take the element of (N0:1, NO:2) in U-S-LSSP-1,i.e.,(16,31,42,36,25) as example. It indicates that the setup time from product 1 to product 2 is 16 on machine M1, 31 on machine M2, 42 on machine M3, etc.
